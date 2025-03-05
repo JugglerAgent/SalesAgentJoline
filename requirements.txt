@@ -1,0 +1,13 @@
+openai==0.28.1
+twilio
+python-dotenv
+fastapi
+uvicorn
+python-multipart
+pdfkit
+
+# System Dependencies (install via package manager):
+# - wkhtmltopdf (https://wkhtmltopdf.org)
+# Ubuntu/Debian: sudo apt-get install wkhtmltopdf
+# CentOS/RHEL: sudo yum install wkhtmltopdf
+# Windows: Download and install from https://wkhtmltopdf.org/downloads.html

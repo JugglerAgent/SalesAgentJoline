@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joline Training Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .chat-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            height: 500px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        .message {
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            max-width: 80%;
+        }
+        .user-message {
+            background-color: #e1f5fe;
+            margin-left: auto;
+            text-align: right;
+        }
+        .assistant-message {
+            background-color: #f0f0f0;
+            margin-right: auto;
+        }
+        .input-container {
+            display: flex;
+            margin-top: 20px;
+        }
+        #message-input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+        #send-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #send-button:hover {
+            background-color: #45a049;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .action-button {
+            padding: 8px 15px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .action-button:hover {
+            background-color: #0b7dda;
+        }
+        .help-text {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fffde7;
+            border-left: 4px solid #ffd600;
+            border-radius: 4px;
+        }
+        .help-text h3 {
+            margin-top: 0;
+        }
+        .help-text ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Joline Training Interface</h1>
+    
+    <div class="chat-container" id="chat-container">
+        <div class="message assistant-message">
+            Hello! I'm Joline's training assistant. You can train me by updating menu items, prices, specials, and restaurant information. How would you like to update my knowledge today?
+        </div>
+    </div>
+    
+    <div class="input-container">
+        <input type="text" id="message-input" placeholder="Type your training message here...">
+        <button id="send-button">Send</button>
+    </div>
+    
+    <div class="button-container">
+        <button class="action-button" id="export-button">Export Changes to Knowledge Base</button>
+        <button class="action-button" id="clear-button">Clear Chat</button>
+    </div>
+    
+    <div class="help-text">
+        <h3>Training Examples:</h3>
+        <ul>
+            <li>"Add a new menu item called 'Truffle Pasta' to the MAINS section for R195. It's a creamy pasta with fresh truffles and Parmesan."</li>
+            <li>"Update the price of the Beef Burger to R185"</li>
+            <li>"Remove the Chocolate Mudcake from the dessert menu"</li>
+            <li>"Add a new special: Summer Seafood Platter for R350, available from December 1 to January 31"</li>
+            <li>"Update our operating hours. We're now open Monday to Sunday from 8:00 to 22:00"</li>
+            <li>Type "export" to save all changes to the knowledge base and update HTML menu files</li>
+        </ul>
+    </div>
+    
+    <div class="help-text">
+        <h3>Important Notes:</h3>
+        <ul>
+            <li>When you make changes to menu items, prices, or specials, the changes are saved to the restaurant_data.json file.</li>
+            <li>When you type "export", the changes are also applied to the HTML menu files in the attachments directory.</li>
+            <li>These HTML files are used to create PDF files when sending menus via email.</li>
+            <li>The following HTML menu files are updated: a_la_carte_menu.html, breakfast_menu.html, kiddies_menu.html, drinks_menu.html, and wine_list.html.</li>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatContainer = document.getElementById('chat-container');
+            const messageInput = document.getElementById('message-input');
+            const sendButton = document.getElementById('send-button');
+            const exportButton = document.getElementById('export-button');
+            const clearButton = document.getElementById('clear-button');
+            
+            // Function to add a message to the chat
+            function addMessage(message, isUser) {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message');
+                messageElement.classList.add(isUser ? 'user-message' : 'assistant-message');
+                messageElement.textContent = message;
+                chatContainer.appendChild(messageElement);
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }
+            
+            // Function to send a message to the server
+            async function sendMessage(message) {
+                try {
+                    const response = await fetch('/training', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ message: message }),
+                    });
+                    
+                    const data = await response.json();
+                    addMessage(data.response, false);
+                    
+                    // Check if the response requires confirmation
+                    if (data.requires_confirmation) {
+                        // Add visual indication that confirmation is required
+                        const lastMessage = chatContainer.lastElementChild;
+                        lastMessage.style.borderLeft = '4px solid #ff9800';
+                        lastMessage.style.backgroundColor = '#fff3e0';
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    addMessage('Sorry, there was an error processing your request.', false);
+                }
+            }
+            
+            // Event listener for send button
+            sendButton.addEventListener('click', function() {
+                const message = messageInput.value.trim();
+                if (message) {
+                    addMessage(message, true);
+                    sendMessage(message);
+                    messageInput.value = '';
+                }
+            });
+            
+            // Event listener for Enter key
+            messageInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendButton.click();
+                }
+            });
+            
+            // Event listener for export button
+            exportButton.addEventListener('click', function() {
+                addMessage('export', true);
+                sendMessage('export');
+            });
+            
+            // Event listener for clear button
+            clearButton.addEventListener('click', function() {
+                chatContainer.innerHTML = '';
+                addMessage('Hello! I\'m Joline\'s training assistant. You can train me by updating menu items, prices, specials, and restaurant information. How would you like to update my knowledge today?', false);
+            });
+        });
+    </script>
+</body>
+</html>

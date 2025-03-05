@@ -1,0 +1,1073 @@
+{
+    "last_updated": "2025-03-05T12:15:34.994870",
+    "name": "Zevenwacht Restaurant",
+    "menu_sections": [
+        {
+            "name": "BREAKFAST MENU",
+            "serving_hours": "07:30-11:00 daily",
+            "items": [
+                {
+                    "name": "Manor House Breakfast",
+                    "description": "2 Eggs your way, bacon, tomato, grilled sausage with herbed mushrooms and onions",
+                    "price": 125
+                },
+                {
+                    "name": "Eggs Benedict (Bacon)",
+                    "description": "Served on a homemade English muffin with hollandaise sauce, with bacon",
+                    "price": 110
+                },
+                {
+                    "name": "Eggs Benedict (Country Ham)",
+                    "description": "Served on a homemade English muffin with hollandaise sauce, with country ham",
+                    "price": 110
+                },
+                {
+                    "name": "Eggs Benedict (Smoked Salmon)",
+                    "description": "Served on a homemade English muffin with hollandaise sauce, with smoked salmon",
+                    "price": 135
+                },
+                {
+                    "name": "Freshly Baked Croissant (Scrambled Eggs and Bacon)",
+                    "description": "With scrambled eggs and bacon",
+                    "price": 95
+                },
+                {
+                    "name": "Freshly Baked Croissant (Scrambled Eggs, Chives and Smoked Salmon)",
+                    "description": "With scrambled eggs, chives and smoked salmon",
+                    "price": 115
+                },
+                {
+                    "name": "Smashed Avocado & Cottage Cheese on Sourdough Toast",
+                    "description": "Served with a fried egg",
+                    "price": 85
+                },
+                {
+                    "name": "Savoury Mince on Sourdough Toast",
+                    "description": "Served with a fried egg",
+                    "price": 95
+                },
+                {
+                    "name": "Smoked Salmon, Chives & Cottage Cheese on Sourdough Toast",
+                    "description": "Served with a poached egg",
+                    "price": 115
+                },
+                {
+                    "name": "Three Egg Open Omelette (Bacon, Cheese, Cherry Tomatoes and Fried Onion)",
+                    "description": "With bacon, cheese, cherry tomatoes and fried onion",
+                    "price": 120
+                },
+                {
+                    "name": "Three Egg Open Omelette (Salmon, Cottage Cheese, Capers and Fresh Chives)",
+                    "description": "With salmon, cottage cheese, capers and fresh chives",
+                    "price": 140
+                },
+                {
+                    "name": "French Banana Bread Toast",
+                    "description": "Served with maple syrup and a dollop of fresh cream",
+                    "price": 125
+                },
+                {
+                    "name": "Fresh Scones",
+                    "description": "With cheese, jam and fresh cream",
+                    "price": 70
+                },
+                {
+                    "name": "Flap Jacks",
+                    "description": "Served with cream and maple syrup",
+                    "price": 85
+                },
+                {
+                    "name": "Scrambled Eggs Mixed with Sweetcorn & Chives",
+                    "description": "Served with sourdough toast",
+                    "price": 105
+                },
+                {
+                    "name": "Continental Breakfast",
+                    "description": "A selection of pastries, cheeses, cold meats, fruits and preserves",
+                    "price": 155
+                }
+            ]
+        },
+        {
+            "name": "BREAKFAST DRINKS",
+            "serving_hours": "07:30-11:00 daily",
+            "items": [
+                {
+                    "name": "Single Espresso",
+                    "description": "",
+                    "price": 28
+                },
+                {
+                    "name": "Double Espresso",
+                    "description": "",
+                    "price": 33
+                },
+                {
+                    "name": "Cappuccino",
+                    "description": "",
+                    "price": 36
+                },
+                {
+                    "name": "Americano",
+                    "description": "",
+                    "price": 34
+                },
+                {
+                    "name": "Caff\u00c3\u00a8 Latte",
+                    "description": "",
+                    "price": 39
+                },
+                {
+                    "name": "Cortado",
+                    "description": "",
+                    "price": 36
+                },
+                {
+                    "name": "Caff\u00c3\u00a8 Mocha",
+                    "description": "",
+                    "price": 39
+                },
+                {
+                    "name": "Hot Chocolate",
+                    "description": "",
+                    "price": 39
+                },
+                {
+                    "name": "Chai Latte",
+                    "description": "",
+                    "price": 39
+                },
+                {
+                    "name": "Red Latte",
+                    "description": "",
+                    "price": 35
+                },
+                {
+                    "name": "Rooibos Tea",
+                    "description": "",
+                    "price": 23
+                },
+                {
+                    "name": "Ceylon Tea",
+                    "description": "",
+                    "price": 23
+                },
+                {
+                    "name": "Earl Grey Tea",
+                    "description": "",
+                    "price": 23
+                },
+                {
+                    "name": "Green Tea",
+                    "description": "",
+                    "price": 23
+                }
+            ]
+        },
+        {
+            "name": "BREAD BOARD",
+            "items": [
+                {
+                    "name": "Charcuterie Plate",
+                    "description": "Seed loaf, flatbread, seed crackers, figs, brie, blue cheese, chevin, flavoured butter, salami, rare roast beef, Parma ham",
+                    "price": 175
+                },
+                {
+                    "name": "Homemade Bread Board",
+                    "description": "Seed loaf, cheese and jalape\u00c3\u00b1o pot bread, garlic flatbread, seed crackers, roasted garlic, peppadew dip, flavoured butter",
+                    "price": 110
+                }
+            ]
+        },
+        {
+            "name": "SMALL PLATES",
+            "items": [
+                {
+                    "name": "Marinated Smoked Olives",
+                    "description": "Green and Kalamata black olives, smoked with wood chips infused with lemon, orange, rosemary, and garlic",
+                    "price": 55
+                },
+                {
+                    "name": "Lamb Ribs",
+                    "description": "Glazed with soy, honey, and mint",
+                    "price": 105
+                },
+                {
+                    "name": "Gochujang Pork Belly Skewer",
+                    "description": "Sesame, apple pur\u00c3\u00a9e, and Asian slaw",
+                    "price": 105
+                },
+                {
+                    "name": "Chicken Kebabs",
+                    "description": "Lime, chilli, garlic, and white wine, served with flatbread",
+                    "price": 95
+                },
+                {
+                    "name": "Salmon Fish Cakes",
+                    "description": "Coriander, lime zest, wasabi mayo and ginger, served with lemon aioli",
+                    "price": 130
+                },
+                {
+                    "name": "Salt & Pepper Squid",
+                    "description": "Served with lemon aioli",
+                    "price": 125
+                },
+                {
+                    "name": "Baked Camembert",
+                    "description": "Caramelised onion, garlic, and basil",
+                    "price": 105
+                },
+                {
+                    "name": "Bang Bang Salmon",
+                    "description": "Lime, chilli, and coriander",
+                    "price": 135
+                },
+                {
+                    "name": "West Coast Mussels",
+                    "description": "White wine, garlic, cream, spring onions, and shallots",
+                    "price": 125
+                }
+            ]
+        },
+        {
+            "name": "MAINS",
+            "items": [
+                {
+                    "name": "Lamb Neck",
+                    "description": "Salsa verde, minted mash, and seasonal vegetables",
+                    "price": 285
+                },
+                {
+                    "name": "Mushroom Tagliatelle",
+                    "description": "Truffle and Parmesan",
+                    "price": 165
+                },
+                {
+                    "name": "Cauliflower Stack",
+                    "description": "Sushi rice, wasabi mayo, soy, pickled ginger",
+                    "price": 155
+                },
+                {
+                    "name": "Chicken & Mushroom Pie",
+                    "description": "Served with your choice of thick-cut chips or salad",
+                    "price": 145
+                },
+                {
+                    "name": "Beef Bobotie",
+                    "description": "Served with yellow rice, toasted coconut, sambals, and chutney",
+                    "price": 155
+                },
+                {
+                    "name": "Lasagne",
+                    "description": "Slow-cooked rich beef, creamy b\u00c3\u00a9chamel sauce, topped with melted cheese, served with a fresh green salad",
+                    "price": 155
+                },
+                {
+                    "name": "Short Rib",
+                    "description": "Slow braised, Parmesan mash, truffle mushrooms",
+                    "price": 285
+                }
+            ]
+        },
+        {
+            "name": "GRILLS",
+            "items": [
+                {
+                    "name": "Flame-Grilled Aged Beef Sirloin",
+                    "description": "",
+                    "price": 245
+                },
+                {
+                    "name": "Chimichurri Sirloin",
+                    "description": "Parsley, garlic, and chilli, served with chips or salad",
+                    "price": 265
+                },
+                {
+                    "name": "Flame Grilled Fillet",
+                    "description": "",
+                    "price": 315
+                },
+                {
+                    "name": "Pork Loin Ribs",
+                    "description": "Served with thick-cut chips or a side salad",
+                    "price": 285
+                },
+                {
+                    "name": "Lamb Chops",
+                    "description": "Marinated in lemon, garlic, and rosemary, served with minted mash or chips",
+                    "price": 310
+                }
+            ]
+        },
+        {
+            "name": "SEAFOOD",
+            "items": [
+                {
+                    "name": "Pan-Fried Line Fish of the Day",
+                    "description": "",
+                    "price": null
+                },
+                {
+                    "name": "Fish & Chips",
+                    "description": "Battered fried hake with homemade tartar sauce, crispy chips, and minted peas",
+                    "price": 175
+                },
+                {
+                    "name": "Salmon Stack",
+                    "description": "Avo, sushi rice, wasabi mayo, and soy",
+                    "price": 295
+                },
+                {
+                    "name": "Seared Salmon",
+                    "description": "Lemon and Cape butter sauce, mange tout",
+                    "price": 285
+                }
+            ]
+        },
+        {
+            "name": "BURGERS",
+            "items": [
+                {
+                    "name": "Beef Burger",
+                    "description": "With smoked cheddar, onion jam, thick-cut chips, and onion rings",
+                    "price": 165
+                },
+                {
+                    "name": "Carb-Conscious Burger",
+                    "description": "Beef patty served on black mushroom, avocado, red onion, tomato, sriracha sauce, and a side salad",
+                    "price": 175
+                },
+                {
+                    "name": "Grilled Chicken Burger",
+                    "description": "Marinated in chilli, lime, white wine, and garlic, served with slaw and thick-cut chips",
+                    "price": 155
+                }
+            ]
+        },
+        {
+            "name": "SALADS",
+            "items": [
+                {
+                    "name": "Prawn, Avo, Chilli & Coriander Salad",
+                    "description": "With a peanut butter soy dressing",
+                    "price": 175
+                },
+                {
+                    "name": "Caesar Salad",
+                    "description": "Crisp romaine lettuce in a creamy tangy Caesar dressing, shaved Parmesan, and crunchy garlic croutons",
+                    "price": 145
+                },
+                {
+                    "name": "Beetroot Salad",
+                    "description": "Cucumber, avocado, rocket, and feta mousse",
+                    "price": 130
+                },
+                {
+                    "name": "Bulgar Wheat Salad",
+                    "description": "Roasted seasonal vegetables mixed with nutty bulgar wheat, tossed in a balsamic reduction, garnished with fresh herbs and crumbed feta",
+                    "price": 130
+                }
+            ]
+        },
+        {
+            "name": "DESSERT",
+            "items": [
+                {
+                    "name": "Our Famous Baked Cheesecake",
+                    "description": "Served with blueberry compote and Amarula ice cream",
+                    "price": 115
+                },
+                {
+                    "name": "Bread & Butter Pudding",
+                    "description": "Orange and cinnamon infused bread and butter pudding, served with warm custard",
+                    "price": 105
+                },
+                {
+                    "name": "Chocolate Mudcake",
+                    "description": "Rich chocolate brownie base topped with hazelnut mousse, chocolate ganache, and roasted almonds",
+                    "price": 115
+                },
+                {
+                    "name": "Berry Parfait",
+                    "description": "Fresh berries and chocolate soil",
+                    "price": 95
+                },
+                {
+                    "name": "Sago Pudding",
+                    "description": "Served with warm custard",
+                    "price": 105
+                }
+            ]
+        },
+        {
+            "name": "KIDDIES MENU",
+            "items": [
+                {
+                    "name": "MCZ Burger",
+                    "description": "Beef patty, tomato sauce, cheese slice on a brioche bun and served with chips",
+                    "price": 89
+                },
+                {
+                    "name": "Chicken Strips",
+                    "description": "Panko chicken strips served with chips and tangy mayo",
+                    "price": 69
+                },
+                {
+                    "name": "Home-Made Fish Fingers",
+                    "description": "Home-made fish fingers served with chips and tangy gherkin mayo",
+                    "price": 89
+                },
+                {
+                    "name": "Sloppy Joe",
+                    "description": "Beef rag\u00c3\u00b9 in a brioche roll served with chips",
+                    "price": 79
+                },
+                {
+                    "name": "Chicken & Cheese Quesadillas",
+                    "description": "Chicken and cheese quesadillas served with tomato sauce",
+                    "price": 89
+                }
+            ]
+        },
+        {
+            "name": "WINE SECTIONS",
+            "items": [
+                {
+                    "name": "THE Z COLLECTION",
+                    "items": [
+                        {
+                            "name": "Sauvignon Blanc 2024",
+                            "description": "Blanc fume style with vibrant lime, gooseberry, citrus & subtle oak spice with a mineral undertone.",
+                            "price": 365
+                        },
+                        {
+                            "name": "Chenin Blanc 2023",
+                            "description": "Old Vine Chenin with concentrated apricot, white peach, and citrus",
+                            "price": 365
+                        },
+                        {
+                            "name": "Reserve 2022",
+                            "description": "Cabernet/Petit Verdot - Powerful wine with blackberry, cassis, oak spice, and a hint of vanilla",
+                            "price": 560
+                        },
+                        {
+                            "name": "Syrah 2022",
+                            "description": "Succulent blackberry, cranberry, cinnamon spice, and pepper",
+                            "price": 560
+                        }
+                    ]
+                },
+                {
+                    "name": "7EVEN'S RANGE",
+                    "items": [
+                        {
+                            "name": "Teven Sauvignon Blanc 2024",
+                            "description": "A morish wine with green tropical fruit with a hint of grapefruit",
+                            "price_glass": 50,
+                            "price_bottle": 145
+                        },
+                        {
+                            "name": "Teven Bouquet Blanc 2024",
+                            "description": "Delicious litchi, Turkish delight, and lingering tangerine",
+                            "price_glass": 50,
+                            "price_bottle": 145
+                        },
+                        {
+                            "name": "Teven Rose 2024",
+                            "description": "An elegant wine with red fruit, ripe raspberry, and hints of strawberry",
+                            "price_glass": 50,
+                            "price_bottle": 145
+                        },
+                        {
+                            "name": "Teven Shiraz Grenache 2022",
+                            "description": "A beautiful red blend with dark fruit, plums, blackberry, and chocolate",
+                            "price_glass": 50,
+                            "price_bottle": 145
+                        },
+                        {
+                            "name": "Teven Pinotage 2023",
+                            "description": "Glorious ripe plum, dark cherry, and a hint of coffee",
+                            "price_glass": 50,
+                            "price_bottle": 145
+                        }
+                    ]
+                },
+                {
+                    "name": "ESTATE WINES",
+                    "items": [
+                        {
+                            "name": "Sauvignon Blanc 2024",
+                            "description": "An abundance of granadilla, gooseberry, and ripe green fig with a zesty finish",
+                            "price_glass": 70,
+                            "price_bottle": 210
+                        },
+                        {
+                            "name": "Chenin Blanc 2024",
+                            "description": "Juicy stone fruit with hints of quince, pineapple, and citrus",
+                            "price_glass": 90,
+                            "price_bottle": 265
+                        },
+                        {
+                            "name": "Chardonnay 2023",
+                            "description": "Flavours of citrus and pear with a subtle oak and roasted almonds",
+                            "price_glass": 90,
+                            "price_bottle": 265
+                        },
+                        {
+                            "name": "Merlot 2021",
+                            "description": "Plush flavours of plums and red and black cherries",
+                            "price_glass": 95,
+                            "price_bottle": 280
+                        },
+                        {
+                            "name": "Cabernet Sauvignon 2022",
+                            "description": "Dense wine with plums, cassis, and hints of dark chocolate",
+                            "price_glass": 95,
+                            "price_bottle": 280
+                        },
+                        {
+                            "name": "Syrah 2021",
+                            "description": "A velvety wine with pepper, plums, blackberry, and warm spice",
+                            "price_glass": 95,
+                            "price_bottle": 280
+                        },
+                        {
+                            "name": "Vine Dried Muscat Blanc NV",
+                            "description": "A luscious dessert wine with complex aromas of apricot, citrus marmalade, and ginger spice, with a tangy finish",
+                            "price_glass": 85,
+                            "price_bottle": 350,
+                            "glass_volume": "75 ml",
+                            "bottle_volume": "375 ml"
+                        }
+                    ]
+                },
+                {
+                    "name": "THE TIN MINE & JAN",
+                    "items": [
+                        {
+                            "name": "Tin Mine White 2023",
+                            "description": "Complex Chenin led blend with white pear, lime, and hints of floral undertones",
+                            "price_glass": 90,
+                            "price_bottle": 265
+                        },
+                        {
+                            "name": "Tin Mine Red 2021",
+                            "description": "Juicy Rhone style blend with blackberry, raspberry, and pepper spice",
+                            "price_glass": 90,
+                            "price_bottle": 265
+                        },
+                        {
+                            "name": "Jan White 2024",
+                            "description": "Chenin led blend with peach, apricot, citrus, and floral undertones",
+                            "price_glass": 90,
+                            "price_bottle": 265
+                        },
+                        {
+                            "name": "Jan Red 2022",
+                            "description": "A delicious wine with blackberry, cranberry, dark cherry with savoury undertones",
+                            "price_glass": 90,
+                            "price_bottle": 265
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BEVERAGES",
+            "items": [
+                {
+                    "name": "COLD BEVERAGES",
+                    "items": [
+                        {
+                            "name": "Cold Drinks",
+                            "description": "300/330ml - Coke, Coke Lite, Coke Zero, Sprite, Sprite Zero, Creme Soda, Sparberry, Granadilla Twist, Fanta Orange",
+                            "price": 30
+                        },
+                        {
+                            "name": "Red Bull",
+                            "description": "",
+                            "price": 50
+                        },
+                        {
+                            "name": "Tisers",
+                            "description": "300/330ml - Appletiser & Red Grapetiser",
+                            "price": 45
+                        },
+                        {
+                            "name": "Mixers",
+                            "description": "200ml - Lemonade, Tonic, Pink Tonic, Soda Water",
+                            "price": 26
+                        },
+                        {
+                            "name": "Cordials",
+                            "description": "Cola Tonic, Passion Fruit, Lime",
+                            "price": 12
+                        }
+                    ]
+                },
+                {
+                    "name": "MOCKTAILS",
+                    "items": [
+                        {
+                            "name": "Steelworx Rock Shandy",
+                            "description": "",
+                            "price": 55
+                        }
+                    ]
+                },
+                {
+                    "name": "COCKTAILS",
+                    "items": [
+                        {
+                            "name": "Mimosa",
+                            "description": "",
+                            "price": 55
+                        },
+                        {
+                            "name": "Mojito",
+                            "description": "",
+                            "price": 85
+                        },
+                        {
+                            "name": "Strawberry Daiquiri",
+                            "description": "",
+                            "price": 85
+                        },
+                        {
+                            "name": "Bombay Sapphire Pink Grapefruit Collins",
+                            "description": "",
+                            "price": 85
+                        },
+                        {
+                            "name": "Mai Tai",
+                            "description": "",
+                            "price": 85
+                        }
+                    ]
+                },
+                {
+                    "name": "BEERS & CIDERS",
+                    "items": [
+                        {
+                            "name": "Corona",
+                            "description": "",
+                            "price": 50
+                        },
+                        {
+                            "name": "CBC Weiss",
+                            "description": "",
+                            "price": 45
+                        },
+                        {
+                            "name": "CBC Pilsner",
+                            "description": "",
+                            "price": 45
+                        },
+                        {
+                            "name": "Stella Artois",
+                            "description": "",
+                            "price": 45
+                        },
+                        {
+                            "name": "Black Label",
+                            "description": "",
+                            "price": 38
+                        },
+                        {
+                            "name": "Castle",
+                            "description": "",
+                            "price": 38
+                        },
+                        {
+                            "name": "Castle Lite",
+                            "description": "",
+                            "price": 38
+                        },
+                        {
+                            "name": "Heineken",
+                            "description": "",
+                            "price": 45
+                        },
+                        {
+                            "name": "Brutal Fruit",
+                            "description": "",
+                            "price": 45
+                        },
+                        {
+                            "name": "Savanna Dry",
+                            "description": "",
+                            "price": 50
+                        },
+                        {
+                            "name": "Savanna Lite",
+                            "description": "",
+                            "price": 48
+                        },
+                        {
+                            "name": "Hunter's Dry",
+                            "description": "",
+                            "price": 42
+                        }
+                    ]
+                },
+                {
+                    "name": "WATER",
+                    "items": [
+                        {
+                            "name": "Sparkling or Still 750ml",
+                            "description": "",
+                            "price": 50
+                        },
+                        {
+                            "name": "Sparkling or Still 250ml",
+                            "description": "",
+                            "price": 26
+                        }
+                    ]
+                },
+                {
+                    "name": "JUICE",
+                    "items": [
+                        {
+                            "name": "Apple Juice",
+                            "description": "",
+                            "price": 35
+                        },
+                        {
+                            "name": "Orange Juice",
+                            "description": "",
+                            "price": 35
+                        },
+                        {
+                            "name": "Mixed Berry Juice",
+                            "description": "",
+                            "price": 35
+                        }
+                    ]
+                },
+                {
+                    "name": "SHERRY",
+                    "items": [
+                        {
+                            "name": "Monis Medium Cream",
+                            "description": "",
+                            "price": 35
+                        },
+                        {
+                            "name": "Monis Pale Dry",
+                            "description": "",
+                            "price": 35
+                        },
+                        {
+                            "name": "Old Brown Sherry",
+                            "description": "",
+                            "price": 30
+                        }
+                    ]
+                },
+                {
+                    "name": "BRANDY",
+                    "items": [
+                        {
+                            "name": "Klipdrift Premium",
+                            "description": "",
+                            "price": 30
+                        },
+                        {
+                            "name": "KWV 3yrs",
+                            "description": "",
+                            "price": 25
+                        },
+                        {
+                            "name": "KWV 20yrs",
+                            "description": "",
+                            "price": 150
+                        }
+                    ]
+                },
+                {
+                    "name": "NON-ALCOHOLIC REFRESHMENTS",
+                    "items": [
+                        {
+                            "name": "Abstinence Blood Orange Aperitif",
+                            "description": "",
+                            "price": 50
+                        },
+                        {
+                            "name": "Robertson Sparkling",
+                            "description": "",
+                            "price": 48
+                        },
+                        {
+                            "name": "Heineken Zero",
+                            "description": "",
+                            "price": 45
+                        },
+                        {
+                            "name": "Devil's Peak Hero",
+                            "description": "",
+                            "price": 38
+                        }
+                    ]
+                },
+                {
+                    "name": "COGNAC",
+                    "items": [
+                        {
+                            "name": "Hennessy VS",
+                            "description": "",
+                            "price": 55
+                        }
+                    ]
+                },
+                {
+                    "name": "LIQUEURS",
+                    "items": [
+                        {
+                            "name": "Amarula",
+                            "description": "",
+                            "price": 30
+                        },
+                        {
+                            "name": "Cointreau",
+                            "description": "",
+                            "price": 50
+                        },
+                        {
+                            "name": "J\u00c3\u00a4germeister",
+                            "description": "",
+                            "price": 30
+                        },
+                        {
+                            "name": "Kahl\u00c3\u00baa",
+                            "description": "",
+                            "price": 35
+                        },
+                        {
+                            "name": "Peppermint",
+                            "description": "",
+                            "price": 25
+                        },
+                        {
+                            "name": "Drambuie",
+                            "description": "",
+                            "price": 50
+                        },
+                        {
+                            "name": "Caramel Vodka",
+                            "description": "",
+                            "price": 30
+                        }
+                    ]
+                },
+                {
+                    "name": "RUM",
+                    "items": [
+                        {
+                            "name": "Elephantom Rum",
+                            "description": "",
+                            "price": 27
+                        },
+                        {
+                            "name": "Bacardi Blanca",
+                            "description": "",
+                            "price": 25
+                        },
+                        {
+                            "name": "Captain Morgan Spiced Gold",
+                            "description": "",
+                            "price": 25
+                        },
+                        {
+                            "name": "Red Heart",
+                            "description": "",
+                            "price": 25
+                        },
+                        {
+                            "name": "Captain Morgan Dark Rum",
+                            "description": "",
+                            "price": 25
+                        },
+                        {
+                            "name": "Malibu",
+                            "description": "",
+                            "price": 25
+                        }
+                    ]
+                },
+                {
+                    "name": "WHISKEY",
+                    "items": [
+                        {
+                            "name": "Tommy Ballards",
+                            "description": "",
+                            "price": 30
+                        },
+                        {
+                            "name": "Glenfiddich 12 Year",
+                            "description": "",
+                            "price": 65
+                        },
+                        {
+                            "name": "J&B",
+                            "description": "",
+                            "price": 27
+                        },
+                        {
+                            "name": "Jameson",
+                            "description": "",
+                            "price": 40
+                        },
+                        {
+                            "name": "Johnnie Walker Black",
+                            "description": "",
+                            "price": 45
+                        },
+                        {
+                            "name": "Bell's",
+                            "description": "",
+                            "price": 27
+                        },
+                        {
+                            "name": "Jack Daniel's",
+                            "description": "",
+                            "price": 35
+                        },
+                        {
+                            "name": "Southern Comfort",
+                            "description": "",
+                            "price": 25
+                        }
+                    ]
+                },
+                {
+                    "name": "GIN",
+                    "items": [
+                        {
+                            "name": "Hendrick's",
+                            "description": "",
+                            "price": 45
+                        },
+                        {
+                            "name": "Bombay",
+                            "description": "",
+                            "price": 40
+                        },
+                        {
+                            "name": "Belgravia",
+                            "description": "",
+                            "price": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "VODKA",
+                    "items": [
+                        {
+                            "name": "Grey Goose",
+                            "description": "",
+                            "price": 50
+                        },
+                        {
+                            "name": "Absolut",
+                            "description": "",
+                            "price": 30
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "training_history": [
+        {
+            "role": "user",
+            "content": "Hi joline. how are you?",
+            "timestamp": "2025-03-05 11:37:32"
+        },
+        {
+            "role": "assistant",
+            "content": "I'm here and ready to assist you with any updates or changes you need for your restaurant.",
+            "timestamp": "2025-03-05 11:37:34"
+        },
+        {
+            "role": "user",
+            "content": "We will work here further, just wanted to see if you are here",
+            "timestamp": "2025-03-05 11:37:58"
+        },
+        {
+            "role": "user",
+            "content": "Hallo Joline. Glad to meet your back end. LOL if you get my drift",
+            "timestamp": "2025-03-05 11:43:50"
+        },
+        {
+            "role": "assistant",
+            "content": "I'm here to assist you with any updates you may need. Please let me know how I can help you.",
+            "timestamp": "2025-03-05 11:43:52"
+        },
+        {
+            "role": "user",
+            "content": "Add a new menu item called 'Truffle Pasta' to the MAINS section for R195. It's a creamy pasta with fresh truffles and Parmesan.",
+            "timestamp": "2025-03-05 11:44:38"
+        },
+        {
+            "role": "user",
+            "content": "Add a new menu item called 'Truffle Pasta' to the MAINS section for R195. It's a creamy pasta with fresh truffles and Parmesan.",
+            "timestamp": "2025-03-05 11:49:36"
+        },
+        {
+            "role": "assistant",
+            "content": "The menu item 'Truffle Pasta' has been successfully added to the MAINS section for R195. It is a creamy pasta with fresh truffles and Parmesan.",
+            "timestamp": "2025-03-05 11:49:37"
+        },
+        {
+            "role": "user",
+            "content": "Hi Joline",
+            "timestamp": "2025-03-05 12:08:42"
+        },
+        {
+            "role": "assistant",
+            "content": "Hello! How can I assist you today?",
+            "timestamp": "2025-03-05 12:08:43"
+        },
+        {
+            "role": "user",
+            "content": "Can you please tell me who you are and what are your context where in you opporate",
+            "timestamp": "2025-03-05 12:09:17"
+        },
+        {
+            "role": "user",
+            "content": "Hi joline, Please remove \"Truffle Pasta\" from the A la Carte menu",
+            "timestamp": "2025-03-05 12:14:28"
+        },
+        {
+            "role": "assistant",
+            "content": "Sure, the item 'Truffle Pasta' has been removed from the A la Carte menu.",
+            "timestamp": "2025-03-05 12:14:29"
+        },
+        {
+            "role": "user",
+            "content": "Thank you. Please now list all the menu items from the A la carte menu and ther prices",
+            "timestamp": "2025-03-05 12:15:17"
+        },
+        {
+            "role": "assistant",
+            "content": "Sure! Here are all the menu items from the A la carte menu along with their prices.",
+            "timestamp": "2025-03-05 12:15:18"
+        },
+        {
+            "role": "user",
+            "content": "Where?",
+            "timestamp": "2025-03-05 12:15:34"
+        }
+    ],
+    "specials": [],
+    "restaurant_info": {
+        "name": "Zevenwacht Restaurant",
+        "address": "Zeevenwacht Wine Estate, Langverwacht Rd, Kuils River",
+        "phone": "+27 21 903 5123",
+        "email": "restaurant@zevenwacht.co.za",
+        "website": "https://www.zevenwacht.co.za",
+        "note": "provide information about the restaurant and its context of operation",
+        "location": "unknown"
+    }
+}

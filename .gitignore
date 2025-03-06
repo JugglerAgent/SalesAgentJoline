@@ -2,3 +2,8 @@
 *.pdf
 __pycache__/
 *.*.swp
+attachments/*.mp3
+test_email_extraction.py
+test_truncated_email.py
+test_email_extraction_fix.py
+test_fixed_email_handler.py

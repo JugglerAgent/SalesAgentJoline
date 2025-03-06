@@ -14,18 +14,24 @@ def extract_latest_reply(email_text, sender_email):
     Extract only the latest reply content from an email thread.
     This function attempts to identify and remove quoted content from previous emails.
     """
+    logger.info(f"EXTRACTION DEBUG - Original email text: {email_text[:200]}...")
+    
     # If the email is very short, it's likely just a new message
     if len(email_text) < 100:
+        logger.info(f"EXTRACTION DEBUG - Email is short (<100 chars), returning as is")
         return email_text.strip()
     
     # First, try to extract content by looking for quoted lines (starting with >)
     lines = email_text.split('\n')
+    logger.info(f"EXTRACTION DEBUG - Split into {len(lines)} lines")
+    
     non_quoted_lines = []
     found_quoted = False
     
-    for line in lines:
+    for i, line in enumerate(lines):
         if line.strip().startswith('>'):
             found_quoted = True
+            logger.info(f"EXTRACTION DEBUG - Found quoted line {i}: {line[:50]}...")
             continue
         # Skip empty lines right after quoted content
         if found_quoted and not line.strip():
@@ -36,6 +42,7 @@ def extract_latest_reply(email_text, sender_email):
     # If we found quoted content and extracted something meaningful
     extracted_by_quotes = '\n'.join(non_quoted_lines).strip()
     if found_quoted and len(extracted_by_quotes) > 20:
+        logger.info(f"EXTRACTION DEBUG - Extracted by quotes: {extracted_by_quotes[:100]}...")
         return extracted_by_quotes
     
     # Common patterns that indicate the start of a quoted message
@@ -74,31 +81,70 @@ def extract_latest_reply(email_text, sender_email):
         matches = list(re.finditer(pattern, email_text))
         if matches:
             pos = matches[0].start()
+            logger.info(f"EXTRACTION DEBUG - Found pattern '{pattern}' at position {pos}")
             if pos < earliest_pos:
                 earliest_pos = pos
                 matching_pattern = pattern
     
     # Extract only the content before the quoted text
     if earliest_pos < len(email_text):
-        logger.debug(f"Found quote pattern: {matching_pattern} at position {earliest_pos}")
+        logger.info(f"EXTRACTION DEBUG - Found quote pattern: {matching_pattern} at position {earliest_pos}")
         new_content = email_text[:earliest_pos].strip()
         
         # If we have very little content, we might have been too aggressive
         if len(new_content) < 10:
+            logger.info(f"EXTRACTION DEBUG - Extracted content too short (<10 chars): '{new_content}'")
             # Try another approach - look for the first paragraph
             paragraphs = re.split(r'\n\s*\n', email_text)
+            logger.info(f"EXTRACTION DEBUG - Split into {len(paragraphs)} paragraphs")
             if paragraphs and len(paragraphs[0]) > 10:
+                logger.info(f"EXTRACTION DEBUG - Using first paragraph: {paragraphs[0][:100]}...")
                 return paragraphs[0].strip()
         
+        logger.info(f"EXTRACTION DEBUG - Final extracted content: {new_content[:100]}...")
         return new_content
     
-    # If no quote patterns were found, try to split by empty lines
-    # and take the first paragraph (often the new content)
+    # If no quote patterns were found, check if we have multiple paragraphs
     paragraphs = re.split(r'\n\s*\n', email_text)
-    if len(paragraphs) > 1 and len(paragraphs[0]) > 10:
-        return paragraphs[0].strip()
+    logger.info(f"EXTRACTION DEBUG - No patterns found, split into {len(paragraphs)} paragraphs")
+    
+    # Check if we have HTML content in the email
+    html_content_index = -1
+    for i, para in enumerate(paragraphs):
+        if '[HTML_CONTENT]' in para:
+            html_content_index = i
+            logger.info(f"EXTRACTION DEBUG - Found HTML content in paragraph {i}")
+            break
+    
+    # If we found HTML content, only use paragraphs before it
+    if html_content_index > 0:
+        # Join all paragraphs before the HTML content
+        content_before_html = '\n\n'.join(paragraphs[:html_content_index]).strip()
+        logger.info(f"EXTRACTION DEBUG - Using content before HTML: {content_before_html[:100]}...")
+        return content_before_html
+    
+    # If we have multiple paragraphs but no HTML marker, join all non-signature paragraphs
+    # (Exclude common signature indicators like "Kind regards", "Thanks", etc.)
+    if len(paragraphs) > 1:
+        # Check for signature indicators
+        signature_indicators = ['kind regards', 'regards', 'thanks', 'thank you', 'cheers', 'sincerely', 'best wishes']
+        content_paragraphs = []
+        
+        for para in paragraphs:
+            para_lower = para.lower().strip()
+            # Skip if it's just a signature line
+            if any(indicator in para_lower for indicator in signature_indicators) and len(para_lower) < 30:
+                logger.info(f"EXTRACTION DEBUG - Skipping signature paragraph: {para}")
+                continue
+            content_paragraphs.append(para)
+        
+        # Join all content paragraphs
+        full_content = '\n\n'.join(content_paragraphs).strip()
+        logger.info(f"EXTRACTION DEBUG - Using full content: {full_content[:100]}...")
+        return full_content
     
     # If all else fails, return the original text
+    logger.info(f"EXTRACTION DEBUG - Returning original text")
     return email_text.strip()
 
 def check_emails():
